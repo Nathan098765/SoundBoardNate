@@ -50,6 +50,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_alarm);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -59,6 +67,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_birds);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -70,6 +86,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_dogbark);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -80,6 +104,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_girlgasp);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -90,6 +122,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_laser);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -100,6 +140,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_laugh);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -110,6 +158,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_rain);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -120,6 +176,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_retrogame);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -130,6 +194,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_rocket);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
                 // Code here executes on main thread after user presses button
             }
 
@@ -140,11 +212,53 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mp = MediaPlayer.create(MainActivity.this,R.raw.sample_nate_sadtrombone);
                 mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
+
+
                 // Code here executes on main thread after user presses button
             }
 
 
+
+
         });
+
+        sneeze.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                mp = MediaPlayer.create(MainActivity.this, R.raw.sample_nate_sneeze);
+                mp.start();
+                mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        mp.stop();
+                        mp.release();
+                        mp = null;
+                    }
+                });
+            }
+        });
+
+                swoosh.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        mp = MediaPlayer.create(MainActivity.this, R.raw.sample_nate_swoosh);
+                        mp.start();
+                        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                            @Override
+                            public void onCompletion(MediaPlayer mp) {
+                                mp.stop();
+                                mp.release();
+                                mp = null;
+                            }
+                        });
+                    }
+                });
 
 
     }
